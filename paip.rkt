@@ -1,7 +1,7 @@
 #lang racket
 
 (define (flatmap f lol)
-  (foldr append '() (map f lol))) 
+  (compose flatten map))
 
 (define (random-elt choices)
   (list-ref choices (random (length choices))))
