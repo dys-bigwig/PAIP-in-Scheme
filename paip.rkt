@@ -1,6 +1,6 @@
 #lang racket
 
-(define (flatmap f lol)
+(define flatmap
   (compose flatten map))
 
 (define (random-elt choices)
